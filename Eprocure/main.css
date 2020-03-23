@@ -1,0 +1,547 @@
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url("/fonts/Quicksand-Bold.ttf?srf3rx") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Quicksand-Light';
+    src: url("fonts/Quicksand-Light.ttf?srf3rx") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Quicksand-Medium';
+    src: url("fonts/Quicksand-Medium.ttf?srf3rx") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Quicksand-Regular';
+    src: url("fonts/Quicksand-Regular.ttf?srf3rx") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body{
+    margin: 0px;
+    border: 0px;
+    background-color: #f5f5f5;
+}
+
+h1{
+    margin: 0px;
+}
+
+.centered_h1{
+    text-align: center;
+    color: blue;
+    font-family:Quicksand-Medium;
+    text-shadow: 1px 5px gray;
+}
+
+.away_from{
+    margin-left: -70px;
+    margin-right: 60px;
+    color:  #e51075;
+    font-family:Quicksand-Medium;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    border-top: 2px dotted blue;
+    /* background: rebeccapurple; */
+    display: inline-block;
+    text-decoration: blue;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 5px;
+    border: 0px;
+    content: normal;
+    vertical-align: -webkit-baseline-middle;
+    margin-top: -20px;
+    font-weight: bold;
+    font-family:Quicksand-Regular;
+
+}
+
+.bar{
+    color: blue;
+}
+
+.nav_hover:hover{
+    color:purple;
+    cursor: pointer;
+}
+
+.red_li{
+    font-style: italic;
+    color: #e51075;
+    font-family:Quicksand-Medium;
+
+}
+
+.red_li:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.image_slider{
+    width: 100%;
+    display: block;
+    height: 200px;
+    background: #f5f5f5;
+}
+
+.image_slider div{
+    margin: auto;
+    height:400px;
+    background: #f5f5f5;
+    width: 80%;
+    /* box-shadow:10px 10px #e51075; */
+
+}
+
+.image_slider div input{
+    background:gray;
+    height: 40px;
+    width: auto;
+    color: blue;
+    border: 0px;
+}
+
+.image_slider div input:hover{
+    background: white;
+}
+
+.image_slider div div{
+    height:100%;
+    float: left;
+    background: gray;
+    width: 80%;
+    box-shadow:150px 10px blue;
+    background: url(4.jpg) no-repeat;
+    -webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+#side_image_ul{
+    display: inline;
+    list-style: none;
+    color: white;
+    font-family: Quicksand-Regular;
+}
+
+.project_updates{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background: white;
+    /* background: url(spots.jpg) no-repeat; */
+    /* background-attachment: fixed; */
+
+}
+
+.project_updates h1{
+    text-align: center;
+    margin-top: 70px;
+    color: #e51075;
+    font-family:Quicksand-Medium;
+}
+
+
+.project_updates p{
+    text-align: center;
+    font-family:Quicksand-Light;
+
+}
+
+.project_updates h4{
+    font-family:Quicksand-Regular;
+
+}
+
+
+.project_updates div{
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+    height: 200px;
+    display: block;
+}
+
+.project_updates div div{
+    width: 33.3%;
+    float: left;
+    height: auto;
+    text-align: center;
+}
+
+.read_more{
+    color:black;
+    font-weight: bold;
+    text-justify: auto;
+}
+
+.read_more:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.main_text{
+    color: gray;
+}
+
+#footer{
+    background: black;
+    float: left;
+    width: 100%;
+    color: wheat;
+    text-align: center;  
+    margin-top:50px;
+
+}
+
+#footer ul li{
+    display: inline-block;
+    margin: 20px;
+    font-family: Quicksand-Light;
+
+}
+
+#footer ul li:hover{
+}
+
+/* login starts here */
+
+.login_section{
+    height: 400px;
+    width: 100%;
+}
+
+.login_section div{
+    margin: auto auto;
+    width: 30%;
+    height: 80%;
+    /* background: #e51075; */
+}
+
+
+/* login ends here */
+
+/* register starts here */
+.register_section{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.register_section p{
+    font-family: Quicksand-Light;
+}
+
+.register_section ul li{
+    font-family: Quicksand-Medium;
+    font-weight: bold;
+}
+/* register ends here */
+
+/* services starts here */
+.services_section{
+    width: 100%;
+}
+
+.services_section div{
+    width: 80%;
+    margin: auto auto;
+}
+
+.services_section div div{
+    float: left;
+    width: 30%;
+    background: white;
+}
+
+.services_section div section{
+    width: 70%;
+    float: left;
+}
+
+.services_section img{
+    width:100%; 
+    height:100%;
+    box-shadow: 10px 10px gray;
+}
+
+.other_services{
+    width: 100%;
+    /* background: #e51075; */
+    margin-top: 50px;
+    float: left;
+}
+
+.other_services div{
+    width: 80%;
+}
+
+.other_services div div{
+    float: left;
+    width: 50%;
+    margin: auto auto;
+    -webkit-border-bottom-left-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+
+}
+
+.other_services div div div{
+    width: 65%;
+    height: 310px;  
+
+}
+
+.other_services div div section{
+    width: 30%;
+}
+
+.other_services div div section img{
+    width:100%;
+    height: 150px;
+    margin: 2.5%;
+}
+
+.other_services_2{
+    width: 100%;
+    margin-top: 50px;
+    float: left;
+}
+
+.other_services_2 div{
+    width: 80%;
+    margin: auto auto;
+}
+
+.other_services_2 div div{
+    width: 30%;
+}
+
+.other_services_2 div section{
+    width: 70%;
+}
+
+.other_services_2 div section ul li{
+    font-family: Quicksand-Medium;
+}
+
+.other_services_2 div div img{
+    width: 100%;
+    height: 200px;
+}
+/* services ends here */
+
+
+/* tender sections starts here */
+
+.tender_section{
+    width: 100%;
+}
+
+.tender_name{
+    width: 80%;
+    margin: auto auto;
+}
+.tender_section p{
+    font-family: Quicksand-Light;
+    text-align: center;
+}
+
+.tender_notices_image{
+    width:100%;
+}
+
+.tender_section ul li{
+    text-align: center;
+}
+
+/* .tender_notices_image2{
+    width: 100%;
+}
+
+.tender_notices_image2 div{
+    width: 80%;
+    margin: auto auto;
+} */
+
+/* project information starts here */
+.projectinfo_section{
+    width:100%;
+}
+
+.projectinfo_section p{
+    font-family: Quicksand-Light;
+    text-align: center;
+}
+
+.projectinfo_section div{
+    width: 80%;
+    height: 20px;
+    background: white;
+    -webkit-border-radius: 10px;
+    margin:auto auto;
+}
+ .projectinfo_section div p{
+     text-align: left;
+     padding-left: 20px;
+     font-size: 17px;
+ }
+
+
+ /* free tender section */
+ .freetender_section{
+     width: 100%;
+ }
+
+ .freetender_section div{
+     width: 80%;
+     margin: auto auto;
+ }
+
+ .freetender_section div img{
+     height: 100px;
+     width: 200px;
+     float: left;
+ }
+
+.freetender_section div p{
+    font-family: Quicksand-Regular;
+    padding-left: 10dp;
+}
+
+.freetender_section div p{
+    font-family: Quicksand-Light;
+    margin-bottom: 50px;
+}
+
+.freetender_section div div{
+    width:100%;
+    float: left;
+    font-size: 15px;
+    margin-top: 10px;
+    background: white;
+    -webkit-border-radius: 10px;
+}
+
+.freetender_section div div h4{
+    margin: 0px;
+    font-family: Quicksand-Medium;
+    
+}
+
+.tender_value{
+    font-family: Quicksand-Light;
+    margin-left: 20px;
+
+}
+
+.view_details{
+    font-family: Quicksand-Medium;
+    color: blue;
+    cursor: pointer;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.view_details:hover{
+    color: red;
+}
+
+.no_password{
+    font-family: Quicksand-Medium;
+    color: #e51075;
+    margin-left: 20px;
+}
+
+
+/* contract awards section starts here */
+.awards_section{
+    width:100%;
+
+}
+
+.awards_section div{
+    width: 80%;
+    margin: auto auto;
+    /* background: url(spots.jpg) no-repeat;
+    background-attachment: fixed; */
+
+}
+
+.awards_section div p{
+    font-family: Quicksand-Light;
+
+}
+
+.awards_section div ul{
+    list-style: square;
+}
+
+.awards_section div ul li{
+    margin-top: 10px;
+}
+
+ a:link{
+    color:#e51075;
+}
+
+a:visited{
+    color: blue;
+}
+
+/* section stops here */
+
+
+/* news section starts here */
+.news_section{
+    width : 100%;
+}
+
+.news_section div{
+    width: 80%;
+    margin:auto auto;
+}
+
+.news_section div div{
+    width: 100%;
+    background: white;
+    -webkit-border-radius: 10px;
+}
+
+.news_section div div h3{
+    font-family: Quicksand-Medium;
+}
+
+.news_section div div p{
+    font-family: Quicksand-Light;
+    color: blue;
+    font-size: 17px;
+    text-decoration: underline;
+    margin: 0px;
+    cursor: pointer;
+}
+/* news section ends here */
+
+
+
+
+
+
