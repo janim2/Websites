@@ -893,7 +893,8 @@ background-position: top left;
 
 #testimonials .testimonial-item .testimonial-img {
   width: 120px;
-  border-radius: 50%;
+  border-radius: 10%;
+  padding: 20px;
   border: 4px solid #fff;
   float: left;
 }

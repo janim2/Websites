@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>NewBiz Bootstrap Template - Index</title>
+  <title>Service | SageIT Services</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -36,42 +36,25 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
 
     <div class="container">
       <nav class="main-nav animated fadeInLeftBig bg bg-light float-left d-none d-lg-block" style="border-radius: 20px;padding:10px;">
 
         <ul>
-          <li class="active"><a href="#intro" class="ion-ios-home-outline"> Home</a></li>
-          <li><a href="#about" class="ion-ios-information-outline"> About Us</a></li>
-          <li><a href="#services" class="ion-ios-help-outline"> Services</a></li>
-          <li><a href="#portfolio" class="ion-code-working"> Portfolio</a></li>
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
+          <li class="active"><a href="index.php#intro" class="ion-ios-home-outline"> Home</a></li>
+          <li><a href="index.php#about" class="ion-ios-information-outline"> About Us</a></li>
+          <li><a href="index.php#services" class="ion-ios-help-outline"> Services</a></li>
+          <li><a href="index.php#portfolio" class="ion-code-working"> Portfolio</a></li>
+          
           <li><a href="dashboard.php" class="ion-ios-locked-outline"> Login</a></li>
+          <li><a href="other_services.php" class="ion-ios-arrow-forward"> Other</a></li>
+
         </ul>
       </nav><!-- .main-nav -->
 
     </div>
   </header><!-- #header -->
-
-  <!-- ======= Intro Sectio
 
   <!-- ======= Intro Section ======= -->
   <section id="" class="clearfix" style="width: 100%; padding: 82px 0 50px 0;">
@@ -103,43 +86,210 @@
     <section id="about">
       <div class="container">
 
-        <header class="section-header">
-          <h3>Service Name</h3>
+      <?php
+        // session_start();
+        require_once('forms/config.php');
+        if(isset($_GET["service"])){
+          session_start();
 
-        </header>
+          $service_type = $_GET["service"];
+          if($service_type == 'advisory'){
+            $name_ = "Technology Advisory and IT Support Services";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+            
+          }
+          else if($service_type == 'web_dev'){
+            $name_ = "Web Development and Hosting";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
+          else if($service_type == 'networking'){
+            $name_ = "Computer Networking and Server Configuration";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
+          else if($service_type == 'software'){
+            $name_ = "Software Solutions";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
+          else if($service_type == 'cctv'){
+            $name_ = "CCTV Surveillance and Security Equipment Installation";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
+          else if($service_type == 'access_control'){
+            $name_ = "Access Control Installation";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
+          else if($service_type == 'graphic'){
+            $name_ = "Graphic Designing";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
+          else if($service_type == 'marketing'){
+            $name_ = "Digital Marketing";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
+          else if($service_type == 'hardware'){
+            $name_ = "Hardware Solutions";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title = $load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
+          else if($service_type == 'other_IT'){
+            $name_ = "Dealers in all IT Tools and Equipment";
+            $load_query = $con->prepare("SELECT s_name,s_description,service_image,activity_1_title,
+            activity_1_description, activity_2_title, activity_2_description 
+            FROM services WHERE s_name = ?"); 
+  
+            $load_query->execute(array($name_));
+            $load_check = $load_query->fetch();
+  
+            $name = $load_check["s_name"];
+            $description = $load_check["s_description"];
+            $service_image = $load_check["service_image"];
+            $a_1_title =$load_check["activity_1_title"];
+            $a_1_description = $load_check["activity_1_description"];
+            $a_2_title = $load_check["activity_2_title"];
+            $a_2_description = $load_check["activity_2_description"];
+          }
 
-        <div class="row about-container">
+          echo "<header class='section-header'>";
+            echo "<h3>"; echo $name; echo "</h3>";
+          echo "</header>";
+          
+          echo "<div class='row about-container'>";
+            echo "<div class='col-lg-6 content order-lg-1 order-2'>";
+              echo "<p>"; $description; echo "</p>";
+              echo "<div class='icon-box wow fadeInUp'>";
+                echo "<div class='icon'><i class='fa fa-shopping-bag'></i></div>";
+                echo "<h4 class='title'><a href=''>"; echo $a_1_title; echo "</a></h4>";
+                echo "<p class='description'>"; echo $a_1_description; echo "</p>";
+              echo "</div>";
 
-          <div class="col-lg-6 content order-lg-1 order-2">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+              echo "<div class='icon-box wow fadeInUp' data-wow-delay='0.2s'>";
+                echo "<div class='icon'><i class='fa fa-photo'></i></div>";
+                echo "<h4 class='title'><a href=''>"; echo $a_2_title; echo "</a></h4>";
+                echo "<p class='description'>"; echo $a_2_description; echo "</p>";
+              echo "</div>";
+            echo "</div>";
 
-            <div class="icon-box wow fadeInUp">
-              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-photo"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="">
-          </div>
-        </div>
-
+            echo "<div class='col-lg-6 background order-lg-2 order-1 wow fadeInUp'>";
+              echo "<img src='"; echo $service_image; echo "' class='img-fluid' alt=''>";
+            echo "</div>";
+          echo "</div>";
+        }
+      ?>
       </div>
     </section><!-- End About Section -->
 
@@ -162,9 +312,9 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#intro">Home</a></li>
-              <li><a href="#about">About us</a></li>
-              <li><a href="#services">Services</a></li>
+              <li><a href="index.php#intro">Home</a></li>
+              <li><a href="index.php#about">About us</a></li>
+              <li><a href="index.php#services">Services</a></li>
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>

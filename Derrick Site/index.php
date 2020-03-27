@@ -43,28 +43,13 @@
       <nav class="main-nav animated fadeInLeftBig bg bg-light float-left d-none d-lg-block" style="border-radius: 20px;padding:10px;">
 
         <ul>
-          <li class="active"><a href="#intro" class="ion-ios-home-outline"> Home</a></li>
-          <li><a href="#about" class="ion-ios-information-outline"> About Us</a></li>
-          <li><a href="#services" class="ion-ios-help-outline"> Services</a></li>
-          <li><a href="#portfolio" class="ion-code-working"> Portfolio</a></li>
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
+          <li class="active"><a href="index.php#intro" class="ion-ios-home-outline"> Home</a></li>
+          <li><a href="index.php#about" class="ion-ios-information-outline"> About Us</a></li>
+          <li><a href="index.php#services" class="ion-ios-help-outline"> Services</a></li>
+          <li><a href="index.php#portfolio" class="ion-code-working"> Portfolio</a></li>
+        
           <li><a href="dashboard.php" class="ion-ios-locked-outline"> Login</a></li>
+          <li><a href="other_services.php" class="ion-ios-arrow-forward"> Other</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -157,14 +142,14 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-help" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="serviceinfo.php">Technology Advisory and IT Support Services</a></h4>
+              <h4 class="title"><a href="serviceinfo.php?service=advisory">Technology Advisory and IT Support Services</a></h4>
               <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-code-working" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Web Development and Hosting</a></h4>
+              <h4 class="title"><a href="serviceinfo.php?service=web_dev">Web Development and Hosting</a></h4>
               <!-- <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p> -->
             </div>
           </div>
@@ -172,14 +157,14 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
               <div class="box">
                 <div class="icon"><i class="ion-ios-world-outline" style="color: #ff689b;"></i></div>
-                <h4 class="title"><a href="">Computer Networking and Server Configuration</a></h4>
+                <h4 class="title"><a href="serviceinfo.php?service=networking">Computer Networking and Server Configuration</a></h4>
                 <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
               </div>
             </div>
             <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
               <div class="box">
                 <div class="icon"><i class="ion-android-phone-portrait" style="color: #e9bf06;"></i></div>
-                <h4 class="title"><a href="">Software Solutions</a></h4>
+                <h4 class="title"><a href="serviceinfo.php?service=software">Software Solutions</a></h4>
                 <!-- <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p> -->
               </div>
             </div>
@@ -187,28 +172,28 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-camera" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">CCTV Surveillance and Security Equipment Installation</a></h4>
+              <h4 class="title"><a href="serviceinfo.php?service=cctv">CCTV Surveillance and Security Equipment Installation</a></h4>
               <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-locked" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Access Control Installation</a></h4>
+              <h4 class="title"><a href="serviceinfo.php?service=access_control">Access Control Installation</a></h4>
               <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
               <div class="box">
                 <div class="icon"><i class="ion-android-image" style="color: #3fcdc7;"></i></div>
-                <h4 class="title"><a href="">Graphic Designing</a></h4>
+                <h4 class="title"><a href="serviceinfo.php?service=graphic">Graphic Designing</a></h4>
                 <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p> -->
               </div>
             </div>
             <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
               <div class="box">
                 <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-                <h4 class="title"><a href="">Digital Marketing</a></h4>
+                <h4 class="title"><a href="serviceinfo.php?service=marketing">Digital Marketing</a></h4>
                 <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> -->
               </div>
             </div>
@@ -216,14 +201,14 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-cog-outline" style="color: #d6ff22;"></i></div>
-              <h4 class="title"><a href="">Hardware Solutions</a></h4>
+              <h4 class="title"><a href="serviceinfo.php?service=hardware">Hardware Solutions</a></h4>
               <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-hammer" style="color: #4680ff;"></i></div>
-              <h4 class="title"><a href="">Dealers in all IT Tools and Equipment</a></h4>
+              <h4 class="title"><a href="serviceinfo.php?service=other_IT">Dealers in all IT Tools and Equipment</a></h4>
               <!-- <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p> -->
             </div>
           </div>
@@ -253,202 +238,43 @@
 
         <div class="row portfolio-container">
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="assets/img/portfolio/app1.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
+          <?php
+              // session_start();
+              require_once('forms/config.php');
+              $select_query = $con->prepare("SELECT id, title, image, work_type
+              FROM portfolio"); 
+              $select_query->execute();
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/web_1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 3</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="assets/img/portfolio/web_1.png" class="venobox link-preview" data-gall="portfolioGallery" title="Web 3"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+              $the_portfolio_array = array();
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 2</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="assets/img/portfolio/app2.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="App 2"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/card2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="assets/img/portfolio/card2.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Card 2"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 2</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="assets/img/portfolio/web2.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Web 2"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="assets/img/portfolio/app3.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="App 3"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/card1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 1</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="assets/img/portfolio/card1.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Card 1"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/card3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 3</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="assets/img/portfolio/card3.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Card 3"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="assets/img/portfolio/web1.jpg" class="venobox link-preview" data-gall="portfolioGallery" title="Web 1"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
+              while($getIt = $select_query->fetch()){
+                  array_push($the_portfolio_array,array(
+                      
+                      "id" => $getIt["id"],
+                      "title" => $getIt["title"],
+                      "image" => $getIt["image"],
+                      "work_type" => $getIt["work_type"],
+                  ));
+                  echo "<div class='col-lg-4 col-md-6 portfolio-item filter-web' data-wow-delay='0.1s'>";
+                      echo "<div class='portfolio-wrap'>";
+                          echo "<img src='"; echo $getIt['image']; echo "' class='img-fluid' alt=''>";
+                          echo "<div class='portfolio-info'>";
+                              echo "<h4><a href='#'>"; echo $getIt['title']; echo "</a></h4>";
+                              echo "<p>"; echo $getIt['work_type']; echo "</p>";
+                          echo "<div>";
+                          echo "<a href='"; echo $getIt['image']; echo"' class='venobox link-preview' data-gall='portfolioGallery' title='"; echo $getIt['title']; echo "'><i class='ion ion-eye'></i></a>";
+                          echo "<a href='#' class='link-details' title='More Details'><i class='ion ion-android-open'></i></a>";
+                      echo "</div>";
+                  echo "</div>";        
+              }
+          ?> 
 
         </div>
 
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="section-bg">
-      <div class="container">
 
-        <header class="section-header">
-          <h3>Testimonials</h3>
-        </header>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-
-            <div class="owl-carousel testimonials-carousel wow fadeInUp">
-
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-              </div>
-
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-              </div>
-
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-              </div>
-
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-              </div>
-
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>End Testimonials Section -->
 
         <!-- ======= Contact Section ======= -->
         <section id="contact">
@@ -463,8 +289,8 @@
               <div class="col-lg-6"><!-- id="contact_i"> --> 
                 <div class="map mb-4 mb-lg-0">
                   <!-- <img src="assets/img/contactbg.jpg"/> -->
-                  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe> -->
-                </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1365936236143!2d-0.40852255489490935!3d5.546757549296017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzInNDguNyJOIDDCsDI0JzE0LjgiVw!5e0!3m2!1sen!2sgh!4v1585176811313!5m2!1sen!2sgh" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+                  </div>
               </div>
     
                 <div class="form">
@@ -517,9 +343,9 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#intro">Home</a></li>
-              <li><a href="#about">About us</a></li>
-              <li><a href="#services">Services</a></li>
+              <li><a href="index.php#intro">Home</a></li>
+              <li><a href="index.php#about">About us</a></li>
+              <li><a href="index.php#services">Services</a></li>
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
