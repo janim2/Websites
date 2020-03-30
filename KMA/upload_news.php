@@ -121,7 +121,7 @@
 								
 								<?php
 									require_once('config.php');
-									session_start();
+									// session_start();
 									if($_COOKIE['isloggedin'] == "false"){
 									// if(!isset($_SESSION['name']) || empty($_SESSION['name'])){
 										echo "<script type='text/javascript'> document.location = 'login.html';</script>";
@@ -207,7 +207,7 @@
                     (imageLoaded)="imageLoaded()" (loadImageFailed)="loadImageFailed()">
                 </image-cropper>
                 <form action="upload_script.php" method="post" enctype="multipart/form-data">
-					<input type="file" name="theimage" id="theimage">
+					<input type="file" name="theimage" id="theimage" required>
 					<!-- <input type="file" name="theimage" class="btn btn-default" id="theimage" value="select image" style="width:100%;"/> -->
                     <input type="text" name="caption" class="form-control" placeholder="Caption" id="caption" required>	
                     <textarea  name="message" class="form-control" placeholder="Your message" rows="8" required></textarea>	
@@ -215,7 +215,7 @@
                
                         <!-- <textarea type="text" name="message" placeholder="Content" id="content" required> -->
                     
-                        <button class="btn btn-default">Preview image</button>
+                        <!-- <button class="btn btn-default">Preview image</button> -->
                         <input type="submit" value="Upload" class="btn btn-default"/>
                         <button class="btn btn-default" data-dismiss="modal" aria-label="Close">Cancel</button>
                     </div>
