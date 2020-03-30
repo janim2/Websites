@@ -13,11 +13,11 @@ if ( !isset($_POST['email'], $_POST['password']) ) {
     
     if($login_check["num"] == 1){
         session_regenerate_id();
-        $_SESSION['loggedin'] = TRUE;
-        $_SESSION['name'] = $_POST['email'];
-        $_SESSION['id'] = $id;
-        setcookie("isloggedin","true",time() + (6400), "/");
-        echo 'Welcome ' . $_SESSION['loggedin'] . '!';
+        // $_SESSION['loggedin'] = TRUE;
+        // $_SESSION['name'] = $_POST['email'];
+        // $_SESSION['id'] = $id;
+        setcookie("isloggedin","true",time() + (86400), "/");
+        // echo 'Welcome ' . $_SESSION['loggedin'] . '!';
 	header('Location: upload_news.php');
     }else{
         die ("Incorrect User ID or Pin");
