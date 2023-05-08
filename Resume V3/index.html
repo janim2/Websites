@@ -1157,8 +1157,83 @@
 			</div>
 		</div>
 	</section> -->
+	<!-- <style>
+		.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.floating-button button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.floating-button button i {
+  font-size: 20px;
+}
+
+.floating-button button:first-child {
+  margin-bottom: 0;
+}
+
+.floating-button button:not(:last-child) {
+  margin-right: 10px;
+}
+.towhite{
+	background-color: black;
+}
 
 
+	</style>
+<div class="floating-button">
+  <button id="play-button" onclick="playAudio()"><i class="icon-paper-plane" style="color:red;;"></i></button>
+  <button id="pause-button" onclick="pauseAudio()"><i class="icon-map-signs"></i></button>
+</div>
+
+
+<audio id="audio-player" autoplay>
+  <source src="mp3/SummerTime-Tagged.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+	const audioPlayer = document.getElementById("audio-player");
+const playButton = document.getElementById("play-button");
+const pauseButton = document.getElementById("pause-button");
+
+function playAudio() {
+audioPlayer.play();
+playButton.style.display = "none";
+pauseButton.style.display = "block";
+}
+
+function pauseAudio() {
+audioPlayer.pause();
+playButton.style.display = "block";
+pauseButton.style.display = "none";
+}
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (!isChrome){
+  $('#iframeAudio').remove()
+}
+else {
+  $('audio-player').remove() // just to make sure that it will not have 2x audio in the background 
+}
+
+</script> -->
 	<footer class="ftco-footer ftco-section">
 		<div class="container">
 			<div class="row mb-5">
